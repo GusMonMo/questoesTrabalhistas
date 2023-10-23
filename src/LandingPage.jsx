@@ -44,6 +44,8 @@ function App() {
           <h3>Trabalho sem carteira assinada</h3>
           <p>Está trabalhando em todas as condições de um CLT? Você pode solicitar o reconhecimento do vínculo empregatício.</p>
         </div>
+        <div className="servimg1"/>
+        <div className="servimg2"/>
         <div className="servBox" style={{marginLeft:'53vw'}}>
         <h3>Reversão de Justa Causa</h3>
         <p>A empresa não provou que você cometeu uma falta grave? Essa situação pode ser revertida e você pode ter todos os direitos de um trabalhador demitido sem justa causa.</p>

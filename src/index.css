@@ -25,7 +25,7 @@ body {
 .button{
   position: absolute;
   border: none;
-  border-radius: max(0.5rem);
+  border-radius: 1vw;
   background-color: var(--primaria);
   color:var(--luz);
   box-shadow: 6px 7px 15px 0px rgba(0, 0, 0, 0.25);
@@ -214,7 +214,7 @@ height: 42vw;
 /* ----------------------------  Serviços -------------------------------------------- */
 .servicos{
   position: relative;
-  background: linear-gradient(180deg, #737373 0%, #4A4A4A 100%);
+  background: url('../Components/Images/Background1.png'), radial-gradient(62.27% 62.27% at 50% 50%, #737373 0%, #4A4A4A 100%);
   width: 100%;
   height: 100%;
   padding-bottom: 10vw;
@@ -243,6 +243,8 @@ height: 42vw;
     margin-left: 2vw;
   }
   .servicos > .servBox{
+    position: inherit;
+    z-index: 2;
     background: var(--luz);
     width: 37vw;
     height: 15vw;
@@ -269,6 +271,32 @@ height: 42vw;
       color: black;
       text-align: center;
     }
+  .servicos > .servimg1{
+    position: absolute;
+    z-index: 1;
+    background-image: url('/Components/Images/Img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+    border-radius: 2vw;
+    width: 38vw;
+    height: 25vw;
+    left: 57vw;
+    top: 19vw;
+  }
+  .servicos > .servimg2{
+    position: absolute;
+    z-index: 1;
+    background-image: url('/Components/Images/Img2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+    border-radius: 2vw;
+    width: 40vw;
+    height: 40vw;
+    left: 6vw;
+    bottom: 10vw;
+  }
 /* ----------------------------  Fim -------------------------------------------- */
 
 .fim{
@@ -384,4 +412,10 @@ height: 42vw;
 
 .button:not(:hover){
   transition-duration:0.4s ;
+}
+
+/* ----------------------------  Mobile -------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+  
 }
