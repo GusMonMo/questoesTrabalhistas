@@ -565,7 +565,6 @@ height: 42vw;
     letter-spacing: 0;
   }
   .apresentacao > .second{
-    background-color: var(--sombra_forte);
     margin-left: 71vw;
     margin-top: 45vw;
     font-size: 2.5vw;
@@ -573,6 +572,12 @@ height: 42vw;
   /* ----------------------------  Serviços --------------------------- */
   .servicos{
     align-items: center;
+  }
+  .servicos > .midPageLogo {
+    width: 20vw;
+    height: 100%;
+    margin-left: 0vw;
+    top: -1.5vw;
   }
     .servicos > .servimg1{
       display: none;
