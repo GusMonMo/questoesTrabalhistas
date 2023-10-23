@@ -9,7 +9,7 @@ function App() {
         <div className="gradient1">
           <h1>Resolva suas questões trabalhistas agora</h1>
           <h2>O escritório mais eficiente e melhor avaliado</h2>
-          <div className="button" style={{width:'20vw', height:'2vw', marginLeft:'60vw', marginTop:'3vw'}}>Falar com um especialista</div>
+          <div className="button" >Falar com um especialista</div>
         </div>
       </div>
 
@@ -29,24 +29,23 @@ function App() {
         <div className="apreBox">
           <h2>Dr. Gabriel Smith, advogado trabalhista</h2>
           <h3>Sócio Fundador - OAB/SP No 123.456</h3>
+        </div>
           <p>Advogado trabalhista graduado em Direito e pós-graduado em direito trabalhista pela Harvard University.</p>
           <div className="second button">Conheça nosso time</div>
           <div className="button">Entre em contato</div>
-        </div>
-        <div className="img2"/>
+          <div className="img2"/>
       </div>
+
       <div className='servicos'>
-      
         <div className="midPageLogo"/>
-        
-        <h2>Nossas Especialidades</h2>
+          <h2>Nossas Especialidades</h2>
         <div className="servBox">
           <h3>Trabalho sem carteira assinada</h3>
           <p>Está trabalhando em todas as condições de um CLT? Você pode solicitar o reconhecimento do vínculo empregatício.</p>
         </div>
         <div className="servimg1"/>
         <div className="servimg2"/>
-        <div className="servBox" style={{marginLeft:'53vw'}}>
+        <div className="servBox2">
         <h3>Reversão de Justa Causa</h3>
         <p>A empresa não provou que você cometeu uma falta grave? Essa situação pode ser revertida e você pode ter todos os direitos de um trabalhador demitido sem justa causa.</p>
         </div>
@@ -57,7 +56,7 @@ function App() {
       </div>
 
       <div className='fim'>
-        <h2>Exija o cumprimento dos seus direitos garantidos por lei</h2>
+        <h2>Exija o cumprimento dos seus direitos que são garantidos por lei</h2>
         <div className="button">Quero falar com um especialista</div>
       </div>
 

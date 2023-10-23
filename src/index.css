@@ -90,6 +90,16 @@ height: 42vw;
       font-size: 2.2vw;
       text-align: center;
     }
+    .gradient1 > .button{
+      font-size: 2vw;
+      width: 30vw;
+      height: 20vw;
+      margin-left: 0;
+      width:20vw;
+      height:2vw;
+      margin-left:60vw;
+      margin-top:3vw;
+    }
 
   /* ---------------------------- Informações -------------------------------------------- */
 
@@ -109,7 +119,7 @@ height: 42vw;
     margin-left: 10vw;
     margin-top: 5vw;
     border: none;
-    border-radius: 0.9rem;
+    border-radius: 2vw;
     padding: 1vw;
     color: var(--luz);
     font-family: var(--fontePrincipal);
@@ -154,9 +164,10 @@ height: 42vw;
   background: linear-gradient(180deg, #737373 0%, #4A4A4A 100%);
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  padding-bottom: 7vw;
+  padding-bottom: 0vw;
 }
   .apresentacao > .apreBox{
     background: none;
@@ -164,7 +175,7 @@ height: 42vw;
     margin-left: 10vw;
     padding-top: 5vw;
     width: 45vw;
-    height: 40vw;
+    height: 20vw;
     font-family: var(--fontePrincipal);
   }
   .apreBox > h2{
@@ -182,23 +193,27 @@ height: 42vw;
     color: var(--luz);
     margin-top: 0;
   }
-  .apreBox > p{
+  .apresentacao > p{
     text-align: left;
     font-weight: 500;
     font-size: 2vw;
     letter-spacing: 0.2vw;
     color: var(--luz);
     margin-top: 3vw;
+    width: 45vw;
+    height: 20vw;
+    font-family: var(--fontePrincipal);
+    margin-left: 10vw;
   }
-  .apreBox > .button{
-    margin-left: 34vw;
-    margin-top: 7vw;
+  .apresentacao > .button{
+    margin-left: 41vw;
+    margin-top: 42vw;
     z-index: 2;
   }
-  .apreBox > .second{
+  .apresentacao > .second{
     background-color: var(--sombra_forte);
-    margin-left: 0vw;
-    margin-top: 0;
+    margin-left: 10vw;
+    margin-top: 36vw;
   }
 .apresentacao > .img2{
   position:absolute;
@@ -218,6 +233,8 @@ height: 42vw;
   width: 100%;
   height: 100%;
   padding-bottom: 10vw;
+  display: flex;
+  flex-direction: column;
 }
   
     .servicos > .midPageLogo {
@@ -255,6 +272,19 @@ height: 42vw;
     padding: 1vw;
     box-shadow: 9px 14px 18px 0px rgba(0, 0, 0, 0.25);
   }
+  .servicos > .servBox2{
+    position: inherit;
+    z-index: 2;
+    background: var(--luz);
+    width: 37vw;
+    height: 15vw;
+    margin-left: 55vw;
+    margin-top: 5vw;
+    border: none;
+    border-radius: 0.9rem;
+    padding: 1vw;
+    box-shadow: 9px 14px 18px 0px rgba(0, 0, 0, 0.25);
+  }
     .servBox > h3{
       font-family: var(--fontePrincipal);
       font-size: 3vw;
@@ -265,6 +295,22 @@ height: 42vw;
       margin-bottom: 0.5vw;
     }
     .servBox > p{
+      font-family: var(--fontePrincipal);
+      font-size: 2vw;
+      font-weight: 500;
+      color: black;
+      text-align: center;
+    }
+    .servBox2 > h3{
+      font-family: var(--fontePrincipal);
+      font-size: 3vw;
+      font-weight: 700;
+      color: var(--primaria);
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0.5vw;
+    }
+    .servBox2 > p{
       font-family: var(--fontePrincipal);
       font-size: 2vw;
       font-weight: 500;
@@ -318,7 +364,8 @@ height: 42vw;
   margin-bottom: 0.5vw;
 }
 .fim > .button{
-  position: static;
+  position: inherit;
+  border-radius: 2.3vw;
   margin-top: 5vw;
   margin-left: 34vw;
   font-size: 2.5vw;
@@ -417,5 +464,165 @@ height: 42vw;
 /* ----------------------------  Mobile -------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
-  
+
+  /* ---------------------------- Capa ----------------------------------- */
+    .gradient1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .gradient1 > h1{
+      margin-left: 0vw;
+      max-width: 35vw;
+      font-size: 4.1vw;
+      text-align: center;
+      margin: 0;
+      padding-top: 5vw;
+    }
+    .gradient1 > h2{
+      margin-left: 0vw;
+      max-width: 50vw;
+      font-size: 2.5vw;
+      text-align: center;
+    }
+    .gradient1 > .button{
+      font-size: 3vw;
+      width: 31vw;
+      height: 4vw;
+      margin-left: 0;
+      margin-top: 30vw;
+    }
+
+  /* ---------------------------- Informações ----------------------------------- */
+  .informacoes{
+    flex-direction: column;
+    align-items: center;
+  }
+    .informacoes > .infoBox{
+      order: 2;
+      margin-left: 0;
+      width: 50vw;
+      height: 30vw;
+    }
+    .infoBox > h2{
+      font-size: 3vw;
+    }
+    .infoBox > p{
+      font-size: 2.3vw;
+    }
+
+    .informacoes > .imagem{
+      margin-left: 0;
+      width: 48vw;
+      height: 30vw;
+      border: 0.5vw solid var(--sombra_forte);
+    }
+      .imagem > .img{
+        width: 48vw;
+        height: 30vw;
+      }
+  /* ----------------------------  Apresentação ------------------------------------ */
+
+  .apresentacao{
+    padding-bottom: 18vw;
+  }
+  .apresentacao > .apreBox{
+    order: 0;
+    z-index: 2;
+    margin-left: 20vw;
+    padding-top: 5vw;
+    width: 60vw;
+    height: 20vw;
+  }
+    .apreBox > h2{
+      font-size: 4.3vw;
+    }
+    .apreBox > h3{
+      font-size: 2.2vw;
+      letter-spacing: 0.3vw;
+    }
+  .apresentacao > p{
+    order: 1;
+    max-width: 30vw;
+    height: 100%;
+    margin-left: 24vw;
+    font-size: 3vw;
+    text-align: left;
+  }
+  .apresentacao > .img2{
+    width: 50vw;
+    height: 100%;
+    margin-left: 42vw;
+    margin-top: 22vw;
+  }
+  .apresentacao > .button{
+    margin-left: 23vw;
+    margin-top: 52vw;
+    z-index: 2;
+    font-size: 2.8vw;
+    padding: 1.5vw;
+    width: 22vw;
+    letter-spacing: 0;
+  }
+  .apresentacao > .second{
+    background-color: var(--sombra_forte);
+    margin-left: 71vw;
+    margin-top: 45vw;
+    font-size: 2.5vw;
+  }
+  /* ----------------------------  Serviços --------------------------- */
+  .servicos{
+    align-items: center;
+  }
+    .servicos > .servimg1{
+      display: none;
+    }
+    .servicos > .servimg2{
+      display: none;
+    }
+    .servicos > .servBox{
+      margin-left: 0vw;
+      width: 50vw;
+      height: 20vw;
+    }
+    .servicos > .servBox2{
+      margin-left: 0vw;
+      width: 50vw;
+      height: 20vw;
+    }
+      .servBox > p{
+        font-size: 2.7vw;
+      }
+      .servBox > h3{
+        font-size: 4vw;
+      }
+      .servBox2 > p{
+        font-size: 2.7vw;
+      }
+      .servBox2 > h3{
+        font-size: 4vw;
+      }
+  /* ----------------------------  Fim -------------------------------------------- */
+  .fim {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .fim > h2{
+    max-width: 50vw;
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 5vw;
+    margin-left: 0vw;
+    margin-top: 0;
+    margin-bottom: 0.5vw;
+  }
+  .fim > .button{
+    position: inherit;
+    margin-top: 5vw;
+    margin-left: 0vw;
+    font-size: 4vw;
+    max-width: 40vw;
+  }
 }
