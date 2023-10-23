@@ -12,6 +12,9 @@
   --detalhe: #DF9F1F;
   --fontePrincipal: 'Garamond'
 }
+p,h1,h2,h3{
+  user-select: none;
+}
 body {
   position: relative;
 	margin: 0;
